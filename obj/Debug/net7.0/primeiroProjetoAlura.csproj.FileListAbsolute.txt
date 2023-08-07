@@ -1,0 +1,15 @@
+C:\Users\rober\source\repos\primeiroProjetoAlura\bin\Debug\net7.0\primeiroProjetoAlura.exe
+C:\Users\rober\source\repos\primeiroProjetoAlura\bin\Debug\net7.0\primeiroProjetoAlura.deps.json
+C:\Users\rober\source\repos\primeiroProjetoAlura\bin\Debug\net7.0\primeiroProjetoAlura.runtimeconfig.json
+C:\Users\rober\source\repos\primeiroProjetoAlura\bin\Debug\net7.0\primeiroProjetoAlura.dll
+C:\Users\rober\source\repos\primeiroProjetoAlura\bin\Debug\net7.0\primeiroProjetoAlura.pdb
+C:\Users\rober\source\repos\primeiroProjetoAlura\obj\Debug\net7.0\primeiroProjetoAlura.csproj.AssemblyReference.cache
+C:\Users\rober\source\repos\primeiroProjetoAlura\obj\Debug\net7.0\primeiroProjetoAlura.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\rober\source\repos\primeiroProjetoAlura\obj\Debug\net7.0\primeiroProjetoAlura.AssemblyInfoInputs.cache
+C:\Users\rober\source\repos\primeiroProjetoAlura\obj\Debug\net7.0\primeiroProjetoAlura.AssemblyInfo.cs
+C:\Users\rober\source\repos\primeiroProjetoAlura\obj\Debug\net7.0\primeiroProjetoAlura.csproj.CoreCompileInputs.cache
+C:\Users\rober\source\repos\primeiroProjetoAlura\obj\Debug\net7.0\primeiroProjetoAlura.dll
+C:\Users\rober\source\repos\primeiroProjetoAlura\obj\Debug\net7.0\refint\primeiroProjetoAlura.dll
+C:\Users\rober\source\repos\primeiroProjetoAlura\obj\Debug\net7.0\primeiroProjetoAlura.pdb
+C:\Users\rober\source\repos\primeiroProjetoAlura\obj\Debug\net7.0\primeiroProjetoAlura.genruntimeconfig.cache
+C:\Users\rober\source\repos\primeiroProjetoAlura\obj\Debug\net7.0\ref\primeiroProjetoAlura.dll
