@@ -1,15 +1,15 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\rober\\source\\repos\\primeiroProjetoAlura\\primeiroProjetoAlura.csproj": {}
+    "C:\\Users\\rober\\source\\repos\\primeiroProjetoAlura\\ScreenSoundV2.csproj": {}
   },
   "projects": {
-    "C:\\Users\\rober\\source\\repos\\primeiroProjetoAlura\\primeiroProjetoAlura.csproj": {
+    "C:\\Users\\rober\\source\\repos\\primeiroProjetoAlura\\ScreenSoundV2.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\rober\\source\\repos\\primeiroProjetoAlura\\primeiroProjetoAlura.csproj",
-        "projectName": "primeiroProjetoAlura",
-        "projectPath": "C:\\Users\\rober\\source\\repos\\primeiroProjetoAlura\\primeiroProjetoAlura.csproj",
+        "projectUniqueName": "C:\\Users\\rober\\source\\repos\\primeiroProjetoAlura\\ScreenSoundV2.csproj",
+        "projectName": "ScreenSoundV2",
+        "projectPath": "C:\\Users\\rober\\source\\repos\\primeiroProjetoAlura\\ScreenSoundV2.csproj",
         "packagesPath": "C:\\Users\\rober\\.nuget\\packages\\",
         "outputPath": "C:\\Users\\rober\\source\\repos\\primeiroProjetoAlura\\obj\\",
         "projectStyle": "PackageReference",

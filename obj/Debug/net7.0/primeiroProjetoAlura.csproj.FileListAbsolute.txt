@@ -3,7 +3,6 @@ C:\Users\rober\source\repos\primeiroProjetoAlura\bin\Debug\net7.0\primeiroProjet
 C:\Users\rober\source\repos\primeiroProjetoAlura\bin\Debug\net7.0\primeiroProjetoAlura.runtimeconfig.json
 C:\Users\rober\source\repos\primeiroProjetoAlura\bin\Debug\net7.0\primeiroProjetoAlura.dll
 C:\Users\rober\source\repos\primeiroProjetoAlura\bin\Debug\net7.0\primeiroProjetoAlura.pdb
-C:\Users\rober\source\repos\primeiroProjetoAlura\obj\Debug\net7.0\primeiroProjetoAlura.csproj.AssemblyReference.cache
 C:\Users\rober\source\repos\primeiroProjetoAlura\obj\Debug\net7.0\primeiroProjetoAlura.GeneratedMSBuildEditorConfig.editorconfig
 C:\Users\rober\source\repos\primeiroProjetoAlura\obj\Debug\net7.0\primeiroProjetoAlura.AssemblyInfoInputs.cache
 C:\Users\rober\source\repos\primeiroProjetoAlura\obj\Debug\net7.0\primeiroProjetoAlura.AssemblyInfo.cs
