@@ -1,17 +1,18 @@
 ﻿// Screen Sound
 using ScreenSoundV2.Models;
 
+
 string msgDeBoasVindas = "Boas vindas ao Screen Sound!";
 
 Band ira = new ("Ira!");
-ira.AddGrade(10);
-ira.AddGrade(8);
-ira.AddGrade(6);
+ira.AddGrade(new Grade(10));
+ira.AddGrade(new Grade(8));
+ira.AddGrade(new Grade(6));
 
 Band teenageFanClub = new("Teenage Fan Club");
-teenageFanClub.AddGrade(9);
-teenageFanClub.AddGrade(8);
-teenageFanClub.AddGrade(10);
+/*teenageFanClub.AddGrade(new Grade(9)); 
+teenageFanClub.AddGrade(new Grade(8));
+teenageFanClub.AddGrade(new Grade(10));*/
 
 Dictionary<string, Band> registeredBand = new();
 registeredBand.Add(ira.Name, ira);
@@ -43,7 +44,7 @@ void ExibirOpcoesMenu()
     Console.Write("\nQual é a sua opção? ");
 
     string opcaoEscolhida = Console.ReadLine()!;
-    int opcaoEscolhidaNumerica = int.Parse(opcaoEscolhida);
+    int opcaoEscolhidaNumerica = int.Parse(opcaoEscolhida!);
 
     switch (opcaoEscolhidaNumerica)
     {
@@ -64,6 +65,7 @@ void ExibirOpcoesMenu()
             break;
     }
 }
+
 void RegistrarBanda()
 {
     Console.Clear();
@@ -89,6 +91,7 @@ void RegisterAlbum()
         Console.Write("Agora insira o nome do album: ");
         string albumTitle = Console.ReadLine()!;
         band.AddAlbum(new Album(albumTitle));
+     
         Console.Clear();
         ExibirOpcoesMenu();
     }
@@ -103,6 +106,7 @@ void RegisterAlbum()
 
 
 }
+
 void MostrarBandasRegistradas()
 {
     Console.Clear();
@@ -116,6 +120,7 @@ void MostrarBandasRegistradas()
     Console.Clear();
     ExibirOpcoesMenu();
 }
+
 void ExibirTituloDaOpcao(string titulo)
 {
     int qtdLetras = titulo.Length;
@@ -124,6 +129,7 @@ void ExibirTituloDaOpcao(string titulo)
     Console.WriteLine(titulo);
     Console.WriteLine(asteristicos + "\n\n");
 }
+
 void AvaliarUmaBanda()
 {
     // digitar o nome da banda para ser avaliada
@@ -138,9 +144,9 @@ void AvaliarUmaBanda()
     {
         Band band = registeredBand[bandName];
         Console.Write($"Qual a nota que a banda {bandName} merece: ");
-        int grade = int.Parse(Console.ReadLine()!);
-        band.AddGrade(grade);
-        Console.WriteLine($"\nA nota {grade} foi registrada com sucesso para a banda {bandName}");
+        Grade value = Grade.Parse(Console.ReadLine()!);
+        band.AddGrade(value);
+        Console.WriteLine($"\nA nota {value.Value} foi registrada com sucesso para a banda {bandName}");
         Thread.Sleep(4000);
         Console.Clear();
         ExibirOpcoesMenu();
@@ -154,65 +160,21 @@ void AvaliarUmaBanda()
     }
 
 }
+
 void ExibirMediaDaBanda()
 {
     Console.Clear();
     ExibirTituloDaOpcao("Exibindo a média de pontos da banda");
     Console.Write("Digite o nome da banda que pretende saber a média: ");
-    string bandName = Console.ReadLine()!;   
-    if(registeredBand.ContainsKey(bandName))        
+    string bandName = Console.ReadLine()!;
+    if (registeredBand.ContainsKey(bandName))
     {
-        Band band = registeredBand[bandName]; 
-        if (band.AverageOfGrades == 0)
-        {
-            Console.WriteLine($"A banda {bandName} não possui nenhum ponto atribuído. \nVoltando ao menu principal...");
-            Thread.Sleep(3000);
-            Console.Clear();
-            ExibirOpcoesMenu();
-        } else
-        {           
-            double roundedGrade = Math.Round(band.AverageOfGrades, 2);
-            Console.WriteLine($"A média da banda {bandName} é {roundedGrade}.");
-            Thread.Sleep(4000);
-            Console.Clear();
-            ExibirOpcoesMenu();
-        }
-    } else
-    {
-        Console.WriteLine($"Ou a banda {bandName} não existe ou o nome inserido contém erros.");
-        Console.Write("Digite uma tecla para voltar ao menu principal: ");
-        Console.ReadKey();
+        Band band = registeredBand[bandName];
+        Console.WriteLine("A pontuação é de ", band.AverageOfGrades);
+        Thread.Sleep(3000);
         Console.Clear();
         ExibirOpcoesMenu();
-    }    
+    }
 }
 
 ExibirOpcoesMenu();
-
-
-
-/* breve excercicio de Dicionario
-
-Dictionary<string, List<int>> vendasCarros = new Dictionary<string, List<int>> {
-    { "Bugatti Veyron", new List<int> { 10, 15, 12, 8, 5 } },
-    { "Koenigsegg Agera RS", new List<int> { 2, 3, 5, 6, 7 } },
-    { "Lamborghini Aventador", new List<int> { 20, 18, 22, 24, 16 } },
-    { "Pagani Huayra", new List<int> { 4, 5, 6, 5, 4 } },
-    { "Ferrari LaFerrari", new List<int> { 7, 6, 5, 8, 10 } }
-};
-
-
-double mediaBugatti = vendasCarros["Bugatti Veyron"].Average();
-Console.WriteLine(mediaBugatti);
-double mediaKoe = vendasCarros["Koenigsegg Agera RS"].Average();
-Console.WriteLine(mediaKoe);
-double mediaLam = vendasCarros["Lamborghini Aventador"].Average();
-Console.WriteLine(mediaLam);    
-double mediaPag = vendasCarros["Pagani Huayra"].Average();
-Console.WriteLine(mediaPag);
-double mediaFer = vendasCarros["Ferrari LaFerrari"].Average();
-Console.WriteLine(mediaFer);
-
-
-
-*/

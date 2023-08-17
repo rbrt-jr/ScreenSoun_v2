@@ -1,17 +1,22 @@
 ﻿namespace ScreenSoundV2.Models;
-class Album
+internal class Album
 {
     public Album(string name)
     {
         this.Name = name;
+      //  CounterOfAlbuns++;
+
     }
     private List<Music> songs = new List<Music>();
     public string Name { get; }
+
+    //public static int CounterOfAlbuns = 0;
     public int TotalDurationOfThisAlbum => songs.Sum(s => s.Duration);
 
     public void AddSongAtAlbum(Music music)
     {
         songs.Add(music);
+ 
     }
 
     public void ShowSongsFromThisAlbum()
@@ -25,5 +30,7 @@ class Album
 
     }
 
+   
+    
 
 }

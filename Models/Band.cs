@@ -1,5 +1,5 @@
 ﻿namespace ScreenSoundV2.Models;
-class Band
+internal class Band
 {
     public Band(string name)
     {
@@ -8,18 +8,26 @@ class Band
 
     private List<Album> albums = new List<Album>();
 
-    private List<int> grades = new List<int>();
+    private List<Grade> grades = new List<Grade>();
 
     public string Name { get; }
 
-    public double AverageOfGrades => grades.Average();
+    public double AverageOfGrades
+    {
+        get
+        {
+            if (grades.Count == 0) return 0;
+            else return grades.Average(g => g.Value);
+
+        }
+    } 
 
     public void AddAlbum(Album album)
     {
         albums.Add(album);
     }
 
-    public void AddGrade(int grade)
+    public void AddGrade(Grade grade)
     {
         grades.Add(grade);
     }

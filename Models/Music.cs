@@ -2,7 +2,7 @@
 using System.Reflection;
 using System.Reflection.Metadata.Ecma335;
 
-class Music
+internal class Music
 {
     public Music(Band artist, string name)
     {
