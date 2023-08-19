@@ -4,13 +4,13 @@ internal class Album
     public Album(string name)
     {
         this.Name = name;
-      //  CounterOfAlbuns++;
+      CounterOfAlbuns++;
 
     }
     private List<Music> songs = new List<Music>();
     public string Name { get; }
 
-    //public static int CounterOfAlbuns = 0;
+    public static int CounterOfAlbuns = 0;
     public int TotalDurationOfThisAlbum => songs.Sum(s => s.Duration);
 
     public void AddSongAtAlbum(Music music)
