@@ -2,7 +2,7 @@
 
 namespace ScreenSoundV2.Menus;
 
-internal class EvaluateBand : Menu
+internal class MenuEvaluateBand : Menu
 {
     public override void Run(Dictionary<string, Band> registeredBand)
     {      

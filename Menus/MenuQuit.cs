@@ -2,7 +2,7 @@
 
 namespace ScreenSoundV2.Menus;
 
-internal class QuitMenu : Menu
+internal class MenuQuit : Menu
 {
     public override void Run(Dictionary<string, Band> registeredBand)
     {

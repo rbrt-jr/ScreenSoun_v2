@@ -2,23 +2,26 @@
 
 namespace ScreenSoundV2.Menus;
 
-internal class RegisterAlbum : Menu
+internal class MenuShowDetails : Menu
 {
+   
     public override void Run(Dictionary<string, Band> registeredBand)
     {
         base.Run(registeredBand);
-        Console.Write("Primeiro insira o nome da banda pretendida: ");
+        DisplayTitleOfOption("Exibindo a média de pontos da banda");
+        Console.Write("Digite o nome da banda que pretende saber detalhes: ");
         string bandName = Console.ReadLine()!;
         if (registeredBand.ContainsKey(bandName))
         {
             Band band = registeredBand[bandName];
-            Console.Write("Agora insira o nome do album: ");
-            string albumTitle = Console.ReadLine()!;
-            band.AddAlbum(new Album(albumTitle));
-            Console.WriteLine($"O album {albumTitle} foi registrado com sucesso!");
-            Console.WriteLine($"Total de albuns registrados até agora: {Album.CounterOfAlbuns}");
+            Console.WriteLine($"\nA pontuação média é de {band.AverageOfGrades}");
+            Console.WriteLine("\nDiscografia:");
+            foreach (Album a in band.Albums)
+            {
+                Console.WriteLine($"{a.Name} --> {a.AverageOfGrades}\n");
+            }
             Thread.Sleep(3000);
-            Console.Clear();            
+            Console.Clear();
         }
         else
         {
@@ -29,3 +32,4 @@ internal class RegisterAlbum : Menu
         }
     }
 }
+

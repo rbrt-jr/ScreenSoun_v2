@@ -1,15 +1,16 @@
 ﻿namespace ScreenSoundV2.Models;
-internal class Band
+internal class Band : IEvaluate
 {
+    private List<Album> albums = new List<Album>();
+
+    private List<Grade> grades = new List<Grade>();
     public Band(string name)
     {
         this.Name = name;
     }
-
-    private List<Album> albums = new List<Album>();
-
-    private List<Grade> grades = new List<Grade>();
-
+    
+    public IEnumerable<Album> Albums => albums;
+  
     public string Name { get; }
 
     public double AverageOfGrades
@@ -20,7 +21,7 @@ internal class Band
             else return grades.Average(g => g.Value);
 
         }
-    } 
+    }
 
     public void AddAlbum(Album album)
     {
@@ -31,7 +32,6 @@ internal class Band
     {
         grades.Add(grade);
     }
-
     public void ShowAlbum()
     {
         Console.WriteLine($"Discography of {Name}\n");

@@ -9,14 +9,17 @@ Band ira = new ("Ira!");
 ira.AddGrade(new Grade(10));
 ira.AddGrade(new Grade(8));
 ira.AddGrade(new Grade(6));
+ira.AddAlbum(new Album("Envelheço na cidade"));
+
 
 Dictionary<int, Menu> options = new();
-options.Add(1, new RegisterBand());
-options.Add(2,new RegisterAlbum());
-options.Add(3, new DisplayRegisteredBands());
-options.Add(4,new EvaluateBand());
-options.Add(5, new ShowDetails());
-options.Add(-1,new QuitMenu());
+options.Add(1, new MenuRegisterBand());
+options.Add(2,new MenuRegisterAlbum());
+options.Add(3, new MenuDisplayRegisteredBands());
+options.Add(4,new MenuEvaluateBand());
+options.Add(5, new MenuShowDetails());
+options.Add(6, new MenuEvaluateAlbum());
+options.Add(-1,new MenuQuit());
 
 Band teenageFanClub = new("Teenage Fan Club");
 Dictionary<string, Band> registeredBand = new();
@@ -43,7 +46,8 @@ void ShowMenuOfOptions()
     Console.WriteLine("Digite 2 para registrar um album à banda");
     Console.WriteLine("Digite 3 para mostrar todas as bandas.");
     Console.WriteLine("Digite 4 para avaliar uma banda.");
-    Console.WriteLine("Digite 5 para exibir a média de uma banda.");
+    Console.WriteLine("Digite 5 para exibir detalhes de uma banda.");
+    Console.WriteLine("Digite 6 para avaliar um álbum.");
     Console.WriteLine("Digite -1 para sair.");
     Console.Write("\nQual é a sua opção? ");
 

@@ -2,7 +2,7 @@
 
 namespace ScreenSoundV2.Menus
 {
-    internal class DisplayRegisteredBands : Menu
+    internal class MenuDisplayRegisteredBands : Menu
     {
         public override void Run(Dictionary<string, Band> registeredBand)
         {
