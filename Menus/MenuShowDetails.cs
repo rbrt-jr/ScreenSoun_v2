@@ -9,27 +9,37 @@ internal class MenuShowDetails : Menu
     {
         base.Run(registeredBand);
         DisplayTitleOfOption("Exibindo a média de pontos da banda");
-        Console.Write("Digite o nome da banda que pretende saber detalhes: ");
+        Console.Write("\nDigite o nome da banda que pretende saber detalhes: ");
         string bandName = Console.ReadLine()!;
         if (registeredBand.ContainsKey(bandName))
         {
             Band band = registeredBand[bandName];
-            Console.WriteLine($"\nA pontuação média é de {band.AverageOfGrades}");
+            Console.WriteLine(band.Resume);
+            Console.WriteLine($"A pontuação média até o momento é de {band.AverageOfGrades}");
             Console.WriteLine("\nDiscografia:");
-            foreach (Album a in band.Albums)
+            if (band.Albums.Count() == 0)
             {
-                Console.WriteLine($"{a.Name} --> {a.AverageOfGrades}\n");
+                Console.WriteLine("\nSem dados registrados ainda.");
+               
             }
-            Thread.Sleep(3000);
-            Console.Clear();
+            else
+            {
+                foreach (Album a in band.Albums)
+                {
+                    Console.WriteLine($"{a.Name} --> {a.AverageOfGrades}\n");
+                }
+                
+            }
+            
         }
         else
         {
             Console.WriteLine($"A banda {bandName} não foi encontrada");
-            Console.Write("Digite uma tecla para voltar ao menu principal: ");
-            Console.ReadKey();
-            Console.Clear();           
+           
         }
+        Console.Write("\n\nDigite uma tecla para voltar ao menu principal: ");
+        Console.ReadKey();
+        Console.Clear();
     }
 }
 

@@ -2,6 +2,9 @@
 
 using ScreenSoundV2.Menus;
 using ScreenSoundV2.Models;
+using OpenAI_API;
+
+
 
 string msgDeBoasVindas = "Boas vindas ao Screen Sound!";
 

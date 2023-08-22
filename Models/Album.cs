@@ -4,7 +4,7 @@ internal class Album : IEvaluate
     public Album(string name)
     {
         this.Name = name;
-      CounterOfAlbuns++;
+     // CounterOfAlbuns++;
     }
 
     private List<Music> songs = new List<Music>();

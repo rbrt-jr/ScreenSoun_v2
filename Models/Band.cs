@@ -13,6 +13,8 @@ internal class Band : IEvaluate
   
     public string Name { get; }
 
+    public string? Resume { get; set; }
+
     public double AverageOfGrades
     {
         get

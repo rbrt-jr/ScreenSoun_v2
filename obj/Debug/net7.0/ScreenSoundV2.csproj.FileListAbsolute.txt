@@ -12,3 +12,17 @@ C:\Users\rober\source\repos\primeiroProjetoAlura\obj\Debug\net7.0\refint\ScreenS
 C:\Users\rober\source\repos\primeiroProjetoAlura\obj\Debug\net7.0\ScreenSoundV2.pdb
 C:\Users\rober\source\repos\primeiroProjetoAlura\obj\Debug\net7.0\ScreenSoundV2.genruntimeconfig.cache
 C:\Users\rober\source\repos\primeiroProjetoAlura\obj\Debug\net7.0\ref\ScreenSoundV2.dll
+C:\Users\rober\source\repos\primeiroProjetoAlura\bin\Debug\net7.0\Microsoft.Bcl.AsyncInterfaces.dll
+C:\Users\rober\source\repos\primeiroProjetoAlura\bin\Debug\net7.0\Microsoft.Extensions.Configuration.dll
+C:\Users\rober\source\repos\primeiroProjetoAlura\bin\Debug\net7.0\Microsoft.Extensions.Configuration.Abstractions.dll
+C:\Users\rober\source\repos\primeiroProjetoAlura\bin\Debug\net7.0\Microsoft.Extensions.Configuration.Binder.dll
+C:\Users\rober\source\repos\primeiroProjetoAlura\bin\Debug\net7.0\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+C:\Users\rober\source\repos\primeiroProjetoAlura\bin\Debug\net7.0\Microsoft.Extensions.Http.dll
+C:\Users\rober\source\repos\primeiroProjetoAlura\bin\Debug\net7.0\Microsoft.Extensions.Logging.dll
+C:\Users\rober\source\repos\primeiroProjetoAlura\bin\Debug\net7.0\Microsoft.Extensions.Logging.Abstractions.dll
+C:\Users\rober\source\repos\primeiroProjetoAlura\bin\Debug\net7.0\Microsoft.Extensions.Options.dll
+C:\Users\rober\source\repos\primeiroProjetoAlura\bin\Debug\net7.0\Microsoft.Extensions.Primitives.dll
+C:\Users\rober\source\repos\primeiroProjetoAlura\bin\Debug\net7.0\Newtonsoft.Json.dll
+C:\Users\rober\source\repos\primeiroProjetoAlura\bin\Debug\net7.0\OpenAI_API.dll
+C:\Users\rober\source\repos\primeiroProjetoAlura\obj\Debug\net7.0\ScreenSoundV2.csproj.AssemblyReference.cache
+C:\Users\rober\source\repos\primeiroProjetoAlura\obj\Debug\net7.0\ScreenSoundV2.csproj.CopyComplete
